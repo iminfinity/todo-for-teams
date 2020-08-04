@@ -1,0 +1,10 @@
+.todo {
+  display: flex;
+  margin: 20px 0;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid green;
+  @media (min-width: 560px) {
+    margin: 20px 20%;
+  }
+}

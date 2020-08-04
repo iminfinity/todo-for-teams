@@ -1,0 +1,14 @@
+.task {
+  display: flex;
+  align-items: center;
+
+  .task-header {
+    font-size: 30px;
+    text-transform: capitalize;
+
+    span {
+      font-size: 18px;
+      font-family: "Roboto Condensed", sans-serif;
+    }
+  }
+}
