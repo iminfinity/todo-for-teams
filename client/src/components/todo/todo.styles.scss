@@ -2,9 +2,15 @@
   display: flex;
   margin: 20px 0;
   flex-direction: column;
-  align-items: center;
-  border: 1px solid green;
+
   @media (min-width: 560px) {
     margin: 20px 20%;
+  }
+  .tasks {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }

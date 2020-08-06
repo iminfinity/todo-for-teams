@@ -22,7 +22,7 @@ class AddTask extends React.Component {
     const { task } = event.target;
     axios
       .post("http://localhost:5000/todo/add", { task: task.value })
-      .then(() => console.log("saved"))
+      .then(() => console.log("New Task Added"))
       .catch((error) => console.log("Error: " + error));
 
     this.props.addNewTask();
@@ -41,7 +41,7 @@ class AddTask extends React.Component {
             value={this.state.task}
             onChange={this.onChange}
           />
-          <input type="submit" value="Add" />
+          <input type="submit" value="&#10010;" />
         </form>
       </div>
     );

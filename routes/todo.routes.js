@@ -22,7 +22,7 @@ router.route("/add").post((req, res) => {
 router.route("/delete/:id").delete((req, res) => {
   Todo.findByIdAndDelete(req.params.id)
     .then(() => res.json("Task Deleted"))
-    .catch((error) => escape.status(400).json("Error:" + error));
+    .catch((error) => res.status(400).json("Error:" + error));
 });
 
 router.route("/update/:id").post((req, res) => {

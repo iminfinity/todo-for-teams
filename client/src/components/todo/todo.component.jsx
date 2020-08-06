@@ -27,7 +27,6 @@ class Todo extends React.Component {
         this.setState({
           tasks: tasks.data,
         });
-        console.log(this.state);
       })
       .catch((error) => {
         console.log(error);

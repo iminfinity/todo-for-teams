@@ -19,9 +19,11 @@ mongoose.connect(uri, {
 });
 
 const connection = mongoose.connection;
-connection.once("open", () => {
-  console.log("MongoDB Running");
-});
+connection
+  .once("open", () => {
+    console.log("MongoDB Running");
+  })
+  .catch((error) => console.log("Error: ", error));
 // ----------------------------------
 
 const todoRouter = require("./routes/todo.routes");
