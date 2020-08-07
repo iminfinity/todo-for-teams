@@ -10,8 +10,29 @@ body {
 
 a {
   text-decoration: none;
+  &:visited {
+    color: #101010;
+  }
 }
 
 ul {
   list-style-type: none;
+}
+
+textarea::placeholder {
+  font-family: "Dancing Script", cursive;
+  font-size: 1.25rem;
+  padding: 5px;
+}
+
+button,
+input[type="submit"] {
+  background: none;
+  outline: none;
+  border: none;
+
+  &:hover {
+    border: 0.5px groove whitesmoke;
+    cursor: pointer;
+  }
 }

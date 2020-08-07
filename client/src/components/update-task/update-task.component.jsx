@@ -45,9 +45,8 @@ class Update extends React.Component {
           className="update-task-modal"
         >
           <form onSubmit={this.onSubmit}>
-            <input
+            <textarea
               name="updatedTask"
-              type="text"
               value={this.state.updatedTask}
               onChange={this.onChange}
               required

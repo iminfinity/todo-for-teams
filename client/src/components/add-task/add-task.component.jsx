@@ -35,11 +35,11 @@ class AddTask extends React.Component {
     return (
       <div className="add-task">
         <form onSubmit={this.onSubmit}>
-          <input
-            type="text"
+          <textarea
             name="task"
             value={this.state.task}
             onChange={this.onChange}
+            placeholder="Add New Task"
           />
           <input type="submit" value="&#10010;" />
         </form>

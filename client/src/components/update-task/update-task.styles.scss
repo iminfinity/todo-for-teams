@@ -1,26 +1,31 @@
 .update-task-modal {
   position: fixed;
-  top: 40%;
-  left: 30%;
-  width: 30%;
-  height: 30%;
-  border: 1px groove sienna;
+  top: 20%;
+  left: 20%;
+  width: 60%;
+  height: 60%;
+  // border: 1px groove sienna;
   display: flex;
   flex-direction: column;
   align-items: center;
   form {
-    width: 100%;
+    width: 80%;
+    height: 80%;
     display: flex;
+    margin-top: 5%;
+    margin-left: 10%;
     align-items: center;
+    justify-content: center;
 
-    input[type="text"] {
+    textarea {
       width: 100%;
-      height: 30px;
+      height: 100%;
       font-family: inherit;
-      font-size: inherit;
+      font-size: 1.25rem;
+      resize: none;
     }
     input[type="submit"] {
-      width: 30%;
+      width: 30px;
       height: 30px;
     }
   }

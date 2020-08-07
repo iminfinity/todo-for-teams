@@ -5,6 +5,12 @@ import axios from "axios";
 import Update from "../update-task/update-task.component";
 
 class Task extends React.Component {
+  splitDate(createdAt) {
+    const dot = createdAt.split(".");
+    const T = dot[0].split("T");
+    const finaLString = "added at " + T[1] + " on " + T[0];
+    return finaLString;
+  }
   deleteTask(id) {
     axios
       .delete(`http://localhost:5000/todo/delete/${id}`)
@@ -22,9 +28,10 @@ class Task extends React.Component {
     return (
       <div className="task">
         <div className="task-header">
-          {task} <span>{createdAt}</span>
+          <p>{task}</p>
+          <p>{this.splitDate(createdAt)}</p>
         </div>
-        <div>
+        <div className="buttons">
           <Update task={task} id={id} updateTask={this.updateTask.bind(this)} />
           <Delete id={id} deleteTask={this.deleteTask.bind(this)} />
         </div>

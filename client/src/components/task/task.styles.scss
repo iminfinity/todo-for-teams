@@ -1,15 +1,29 @@
 .task {
   display: flex;
   justify-content: space-between;
-
+  // border-bottom: 2px groove darkcyan;
+  margin-bottom: 15px;
   width: 100%;
   .task-header {
     font-size: 30px;
+    display: flex;
+    flex-direction: column;
     text-transform: capitalize;
-
-    span {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    width: 95%;
+    p:last-child {
+      align-self: flex-end;
+      text-transform: none;
       font-size: 18px;
       font-family: "Roboto Condensed", sans-serif;
     }
+  }
+
+  .buttons {
+    margin: 4px 4px 0 0;
+    display: flex;
+    flex-direction: column;
+    // border: 1px solid black;
   }
 }
