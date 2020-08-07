@@ -16,7 +16,7 @@ class Header extends React.Component {
     return (
       <div className="header">
         <Link className="nav" to="/">
-          ToDo In Style
+          ToDo For Teams
         </Link>
       </div>
     );
