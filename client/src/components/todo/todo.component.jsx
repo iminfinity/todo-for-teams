@@ -22,7 +22,7 @@ class Todo extends React.Component {
   }
   addNewTask() {
     axios
-      .get("http://localhost:5000/todo")
+      .get("https://todo-for-teams.herokuapp.com/todo")
       .then((tasks) => {
         this.setState({
           tasks: tasks.data,

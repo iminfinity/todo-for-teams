@@ -13,13 +13,13 @@ class Task extends React.Component {
   }
   deleteTask(id) {
     axios
-      .delete(`http://localhost:5000/todo/delete/${id}`)
+      .delete(`https://todo-for-teams.herokuapp.com/todo/delete/${id}`)
       .then(() => console.log("Task Deleted"))
       .catch((error) => console.log(error));
   }
   updateTask(id, task) {
     axios
-      .post(`http://localhost:5000/todo/update/${id}`, { task })
+      .post(`https://todo-for-teams.herokuapp.com/todo/update/${id}`, { task })
       .then(() => console.log("Task Updated"))
       .catch((error) => console.log(error));
   }

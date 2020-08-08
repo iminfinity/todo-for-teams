@@ -21,7 +21,9 @@ class AddTask extends React.Component {
     event.preventDefault();
     const { task } = event.target;
     axios
-      .post("http://localhost:5000/todo/add", { task: task.value })
+      .post("https://todo-for-teams.herokuapp.com/todo/add", {
+        task: task.value,
+      })
       .then(() => console.log("New Task Added"))
       .catch((error) => console.log("Error: " + error));
 
